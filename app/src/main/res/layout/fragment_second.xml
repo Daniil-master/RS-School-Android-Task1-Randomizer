@@ -10,6 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:fontFamily="@font/open_sans"
         android:text="Result:"
         android:textAlignment="center"
         android:textSize="26sp"
@@ -22,6 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/open_sans_semibold"
         android:text="Result:"
         android:textAlignment="center"
         android:textSize="66sp"
@@ -30,12 +32,15 @@
         app:layout_constraintTop_toBottomOf="@id/result_label"
         tools:text="0" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/back"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="@drawable/bg_back_btn"
+        android:fontFamily="@font/open_sans_semibold"
         android:text="Back"
+        android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result" />
