@@ -54,8 +54,8 @@ class FirstFragment : Fragment() {
                 editMaxValue?.text.toString().toLongOrNull()
                     ?: 0 // получаем максимальное значени EditText
 
-            if (max == 0L)
-                showToast("Вы не ввели максимальное значение")
+            if (editMinValue?.text.toString() == "" ||  editMaxValue?.text.toString() == "")
+                showToast("Вы не ввели все данные")
             else if(min == max)
                 showToast("Не корректно введены данные. \nНельзя вводить min и max одинаковыми")
             else if (min > Int.MAX_VALUE || max > Int.MAX_VALUE) // проверка на диапозон Int хранимых значений для Long
