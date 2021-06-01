@@ -1,4 +1,4 @@
-# rsschool-Android-2021-task-randomizer
+# Android. Task Randomizer (2021)
 
 :point_up: В первом практическом задании мы создадим рандомайзер, он же - генератор случайных чисел.
 
